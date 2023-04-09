@@ -10,7 +10,10 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
         .then(response => response.text())
         .then(html => {
             console.log(html)
-            const substrings = ["solar", "hydro", "renewable"];
+            const substrings = ["B-Corp", "Fair Trade Certified", "Fairtrade International", "Fair for Life", "World Fair Trade Organization",
+                "WFTO", "Fair Labor Association", "Fair Wear Foundation", "Fair Trade Federation", "Forest Stewardship Council", "Programme for the Endorsement of Forest Certification",
+                "PEFC", "Cradle to Cradle", "Cradle to Cradle Certified", "LEED", "Green Seal", "Energy Star", "USDA Organic", "Organic", "Rainforest Alliance Certified",
+                "Global Organic Textile Standard", "GOTS", "Bluesign Certified", "Carbon Trust Certification"];
             const regex = new RegExp(substrings.join("|"), "gi");
             const count = (html.split(regex).length - 1);
             console.log(count)
