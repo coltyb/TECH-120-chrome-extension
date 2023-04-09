@@ -18,5 +18,14 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
             const count = (html.split(regex).length - 1);
             console.log(count)
             document.getElementById("score").innerText = count;
+
+            if (count > 0) {
+                document.body.style.backgroundColor = "green";
+            }
+            else
+            {
+                document.body.style.backgroundColor = "red";
+            }
+
         });
 });
