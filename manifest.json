@@ -25,7 +25,7 @@
         "https://www.example.com/*"
       ],
       "js": [
-        "popup.js"
+        "popupMini.js"
       ]
     }
   ]

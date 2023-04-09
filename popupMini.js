@@ -14,6 +14,6 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
             const regex = new RegExp(substrings.join("|"), "gi");
             const count = (html.split(regex).length - 1);
             console.log(count)
-            document.getElementById("test").innerText = count;
+            document.getElementById("score").innerText = count;
         });
 });
