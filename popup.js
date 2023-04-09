@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-document.getElementById("btn").addEventListener("click", document.getElementById('test').innerHTML = 'Paragraph changed.');
-=======
 // Define the URL of the webpage to scrape
 const url = "https://www.example.com/product";
 

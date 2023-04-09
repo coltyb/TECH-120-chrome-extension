@@ -1,12 +1,6 @@
 {
-<<<<<<< Updated upstream
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "name": "EarthKind",
   "version": "1.0",
-=======
-  "name": "GreenShop",
-  "version": "2.0",
->>>>>>> Stashed changes
   "description": "An extension that helps promote environmentally-friendly products",
   "manifest_version": 3,
 
@@ -20,18 +14,11 @@
 
   "permissions": [
     "activeTab",
-<<<<<<< Updated upstream
     "storage",
     "contextMenus",
     "tabs",
-    "https://www.example.com/*"
-=======
     "storage"
->>>>>>> Stashed changes
   ],
-  "background": {
-    "scripts": [ "background.js" ]
-  },
   "content_scripts": [
     {
       "matches": [
