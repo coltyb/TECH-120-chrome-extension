@@ -9,7 +9,7 @@
     "default_icon": {
       "32": "icons/earthkind-32.png"
     },
-    "default_popup": "hello.html"
+    "default_popup": "popup.html"
   },
 
   "permissions": [
