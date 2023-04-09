@@ -1,0 +1,20 @@
+import requests
+from bs4 import BeautifulSoup
+
+# Specify the URL of the product page you want to scrape
+url = "https://www.example.com/product-page"
+
+# Send a GET request to the URL and store the response in a variable
+response = requests.get(url)
+
+# Use BeautifulSoup to parse the HTML content of the response
+soup = BeautifulSoup(response.content, 'html.parser')
+
+# Find the element on the page that contains the information about the product's origin
+origin_element = soup.find('div', {'class': 'product-origin'})
+
+# Extract the text from the element
+origin_text = origin_element.get_text().strip()
+
+# Print the extracted information
+print("Product origin:", origin_text)
