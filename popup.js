@@ -1,1 +1,1 @@
-console.log('This is a popup!');
+document.getElementById("btn").addEventListener("click", document.getElementById('test').innerHTML = 'Paragraph changed.');
