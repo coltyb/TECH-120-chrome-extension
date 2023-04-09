@@ -1,2 +1,4 @@
-//document.getElementById("btn").addEventListener("click", {});//document.getElementById('test').innerHTML = 'Paragraph changed.');
-document.getElementById('test').innerHTML = 'Paragraph changed.'
+document.getElementById("btn").addEventListener("click", function () {
+    document.getElementById('test').innerHTML = 'Paragraph changed.';
+    console.log("hi");
+});

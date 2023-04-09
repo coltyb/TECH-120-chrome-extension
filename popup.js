@@ -79,4 +79,3 @@ fetch(url)
 }, error => {
     console.error(error);
 });
->>>>>>> Stashed changes
